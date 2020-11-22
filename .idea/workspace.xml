@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc77f576-54b1-485d-94e4-9812d2291a39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/HW6_260906286.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fc77f576-54b1-485d-94e4-9812d2291a39" name="Default Changelist" comment="data updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/collect_hottest.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/collect_hottest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/collect_hottest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="585">
               <caret line="39" column="75" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -29,69 +25,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/20201121_politics_hot.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201121_politics_new.json">
+        <entry file="file://$PROJECT_DIR$/data/20201122_politics_new.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11797" />
+            <state relative-caret-position="-11534" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201121_conservative_new.json">
+        <entry file="file://$PROJECT_DIR$/data/20201122_politics_hot.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14219" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201121_conservative_hot.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8991" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201117_conservative_hot.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9645">
-              <caret line="643" column="98" selection-start-line="643" selection-start-column="98" selection-end-line="643" selection-end-column="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201117_conservative_new.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14055">
-              <caret line="937" column="108" selection-start-line="937" selection-start-column="108" selection-end-line="937" selection-end-column="108" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201117_politics_hot.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201117_politics_new.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/check.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-12134" />
           </provider>
         </entry>
       </file>
@@ -125,7 +69,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="28" />
+    <option name="x" value="86" />
     <option name="y" value="23" />
     <option name="width" value="1239" />
     <option name="height" value="730" />
@@ -136,7 +80,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,6 +101,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,7 +162,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/collect_hottest.py" />
-      <option name="PARAMETERS" value="-o ../data/20201121_politics_hot.json politics" />
+      <option name="PARAMETERS" value="-o ../data/20201122_conservative_hot.json conservative" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -248,10 +192,18 @@
       <option name="presentableId" value="Default" />
       <updated>1604424621317</updated>
     </task>
+    <task id="LOCAL-00001" summary="data updated">
+      <created>1605993610140</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605993610140</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="23" width="1239" height="730" extended-state="0" />
+    <frame x="41" y="23" width="1239" height="730" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -296,6 +248,10 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout-to-restore>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="data updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="data updated" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/test_politics.json" />
     <entry file="file://$USER_HOME$/Desktop/check.py" />
@@ -317,6 +273,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201121_conservative_hot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8991" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201121_conservative_new.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11495" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201121_politics_new.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11999" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201121_politics_hot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12764" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201117_conservative_hot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9645">
+          <caret line="643" column="98" selection-start-line="643" selection-start-column="98" selection-end-line="643" selection-end-column="98" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/20201117_conservative_new.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -341,40 +324,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201117_conservative_hot.json">
+    <entry file="file://$PROJECT_DIR$/data/20201122_politics_hot.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9645">
-          <caret line="643" column="98" selection-start-line="643" selection-start-column="98" selection-end-line="643" selection-end-column="98" />
-        </state>
+        <state relative-caret-position="-12134" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201121_conservative_hot.json">
+    <entry file="file://$PROJECT_DIR$/data/20201122_politics_new.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8991" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201121_conservative_new.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14219" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201121_politics_new.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11797" />
+        <state relative-caret-position="-11534" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/collect_hottest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="585">
           <caret line="39" column="75" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201121_politics_hot.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
