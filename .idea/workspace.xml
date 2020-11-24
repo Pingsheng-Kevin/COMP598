@@ -16,12 +16,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/collect_hottest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+            <state relative-caret-position="143">
+              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/20201124_conservatives_hot.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-14594" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/20201124_conservatives_new.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-14654" />
           </provider>
         </entry>
       </file>
@@ -55,9 +69,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="41" />
-    <option name="y" value="24" />
-    <option name="width" value="1239" />
+    <option name="y" value="147" />
+    <option name="width" value="1279" />
     <option name="height" value="730" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -148,7 +161,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/collect_hottest.py" />
-      <option name="PARAMETERS" value="-o ../data/20201123_conservatives_new.json conservatives" />
+      <option name="PARAMETERS" value="-o ../data/20201124_politics_new.json politics" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -189,7 +202,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="24" width="1279" height="730" extended-state="6" />
+    <frame x="0" y="23" width="1279" height="730" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -334,10 +347,30 @@
         <state relative-caret-position="-12599" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201123_politics_new.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13109" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201123_conservatives_new.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12487" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201124_conservatives_new.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14654" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201124_conservatives_hot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14594" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/collect_hottest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+        <state relative-caret-position="143">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
