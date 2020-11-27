@@ -1,4 +1,4 @@
-# This script is used to output the posts that mention "Trump" or "Biden" (case insensitive) in their titles into a tsv file while showing the count of candidate_mentioning posts
+# This script is used to output the posts that mention "Trump" or "Biden" (case sensitive) in their titles into a tsv file while showing the count of candidate_mentioning posts
 
 # The file to be read is a json file. Each line of the file is a dict of the format {"date": date, "post_info": {"approved_at_utc": ...}} 
 
