@@ -18,7 +18,7 @@ def get_posts(sub_reddit_name):
     # after = "t3_jnn8bn"
     # TODO: Error Handling
     try:
-        data = requests.get(f'http://api.reddit.com/r/{sub_reddit_name}/new?limit={num_posts}',
+        data = requests.get(f'http://api.reddit.com/r/{sub_reddit_name}/rising?limit={num_posts}',
                             headers={'User-Agent': 'macos:requests (by /u/Sense_Sen_sibility)'})
     except requests.exceptions:
         print("Request Fails.")
@@ -37,7 +37,7 @@ def get_posts_after(sub_reddit_name, after_name):
     after = after_name
     # TODO: Error Handling
     try:
-        data = requests.get(f'http://api.reddit.com/r/{sub_reddit_name}/new?limit={num_posts}&after={after}',
+        data = requests.get(f'http://api.reddit.com/r/{sub_reddit_name}/rising?limit={num_posts}&after={after}',
                             headers={'User-Agent': 'macos:requests (by /u/Sense_Sen_sibility)'})
     except requests.exceptions:
         print("Request Fails.")
