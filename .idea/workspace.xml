@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc77f576-54b1-485d-94e4-9812d2291a39" name="Default Changelist" comment="data updated">
-      <change afterPath="$PROJECT_DIR$/data/20201130_conservatives_controversial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/20201130_conservatives_hot.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/20201130_conservatives_new.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/20201130_conservatives_rising.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/20201130_conservatives_top.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/20201130_politics_controversial.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/20201130_politics_hot.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/20201130_politics_new.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/20201130_politics_rising.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/20201130_politics_top.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HW6_260906286.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HW6_260906286.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/collect_hottest.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/collect_hottest.py" afterDir="false" />
-    </list>
+    <list default="true" id="fc77f576-54b1-485d-94e4-9812d2291a39" name="Default Changelist" comment="data updated" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +29,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/20201130_politics_controversial.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/20201130_politics_new.json">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -80,6 +70,7 @@
         <option value="$PROJECT_DIR$/scripts/check.py" />
         <option value="$PROJECT_DIR$/data/20201104_politics.json" />
         <option value="$PROJECT_DIR$/scripts/collect_hottest.py" />
+        <option value="$PROJECT_DIR$/data/20201130_politics_controversial.json" />
       </list>
     </option>
   </component>
@@ -475,6 +466,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/20201130_politics_controversial.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201130_politics_new.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
