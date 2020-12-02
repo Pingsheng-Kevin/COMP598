@@ -1,0 +1,128 @@
+Running first round analysis on the file ../data/20201117_conservative_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+645	145	87	25	0.321	0.225	0.135	0.09
+
+Running first round analysis on the file ../data/20201117_conservative_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+951	229	134	37	0.343	0.241	0.141	0.1
+
+Running first round analysis on the file ../data/20201117_politics_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+881	406	213	94	0.596	0.461	0.242	0.219
+
+Running first round analysis on the file ../data/20201117_politics_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+990	441	225	91	0.581	0.445	0.227	0.218
+
+Running first round analysis on the file ../data/20201121_conservative_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+654	108	75	5	0.272	0.165	0.115	0.05
+
+Running first round analysis on the file ../data/20201121_conservative_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+970	157	116	11	0.27	0.162	0.12	0.042
+
+Running first round analysis on the file ../data/20201121_politics_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+873	458	199	76	0.666	0.525	0.228	0.297
+
+Running first round analysis on the file ../data/20201121_politics_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+822	401	201	69	0.648	0.488	0.245	0.243
+
+Running first round analysis on the file ../data/20201122_conservative_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+711	130	80	11	0.28	0.183	0.113	0.07
+
+Running first round analysis on the file ../data/20201122_conservative_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+981	175	115	13	0.282	0.178	0.117	0.061
+
+Running first round analysis on the file ../data/20201122_politics_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+831	449	191	79	0.675	0.54	0.23	0.31
+
+Running first round analysis on the file ../data/20201122_politics_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+791	404	187	73	0.655	0.511	0.236	0.275
+
+Running first round analysis on the file ../data/20201123_conservative_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+739	155	76	15	0.292	0.21	0.103	0.107
+
+Running first round analysis on the file ../data/20201123_politics_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+862	420	238	75	0.676	0.487	0.276	0.211
+
+Running first round analysis on the file ../data/20201123_politics_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+896	397	249	67	0.646	0.443	0.278	0.165
+
+Running first round analysis on the file ../data/20201124_politics_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+878	417	225	66	0.656	0.475	0.256	0.219
+
+Running first round analysis on the file ../data/20201124_politics_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+996	434	265	64	0.638	0.436	0.266	0.17
+
+Running first round analysis on the file ../data/20201126_politics_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+818	358	217	68	0.62	0.438	0.265	0.173
+
+Running first round analysis on the file ../data/20201126_politics_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+996	407	294	86	0.617	0.409	0.295	0.114
+
+Running first round analysis on the file ../data/20201126_politics_top.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+291	132	67	29	0.584	0.454	0.23	0.224
+
+Running first round analysis on the file ../data/20201126_politics_rising.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+26	12	6	4	0.538	0.462	0.231	0.231
+
+Running first round analysis on the file ../data/20201126_politics_controversial.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+291	132	67	29	0.584	0.454	0.23	0.224
+
+Running first round analysis on the file ../data/20201127_politics_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+753	360	178	72	0.619	0.478	0.236	0.242
+
+Running first round analysis on the file ../data/20201127_politics_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+862	395	226	79	0.629	0.458	0.262	0.196
+
+Running first round analysis on the file ../data/20201127_politics_top.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+273	143	66	29	0.659	0.524	0.242	0.282
+
+Running first round analysis on the file ../data/20201127_politics_rising.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+201	88	64	32	0.597	0.438	0.318	0.12
+
+Running first round analysis on the file ../data/20201127_politics_controversial.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+273	143	66	29	0.659	0.524	0.242	0.282
+
+Running first round analysis on the file ../data/20201130_politics_hot.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+796	346	256	75	0.662	0.435	0.322	0.113
+
+Running first round analysis on the file ../data/20201130_politics_new.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+992	412	323	95	0.645	0.415	0.326	0.089
+
+Running first round analysis on the file ../data/20201130_politics_top.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+422	165	146	32	0.661	0.391	0.346	0.045
+
+Running first round analysis on the file ../data/20201130_politics_rising.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+37	18	11	3	0.703	0.486	0.297	0.189
+
+Running first round analysis on the file ../data/20201130_politics_controversial.json
+Total # posts	Mention Trump	Mention Biden	Mention Both	Density	Density of Trump	Density of Biden	Density Difference
+422	165	146	32	0.661	0.391	0.346	0.045
+
