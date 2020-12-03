@@ -1,6 +1,6 @@
 # This script is used to randomly sample 200 candidate-mentioning posts from a tsv file
 # Output file is also a tsv file 
-# Assume that the input file has more than 200 lines 
+# Assume that the input file has more than 201 lines (1 for the header) 
 
 import argparse as agp
 import random as rd 
@@ -18,9 +18,12 @@ def main():
 
     # randomly generate 200 different line numbers
     to_be_selected = rd.sample(range(1, args.num+1), 200)
+    
+    header = rfile.readline()
+    ofile.write(header)
 
-    line_num = 1 
-    while line_num <= args.num:
+    line_num = 1
+    while line_num <= args.num and line_num <= max(to_be_selected):
         
         line = rfile.readline()
         if line_num in to_be_selected:
