@@ -7,6 +7,13 @@ import argparse as agp
 import random as rd 
 import json 
 import datetime as dt 
+import os.path as osp 
+
+def time(filename):
+    # the first eight characters of the input filename is of a format %Y%m%d
+
+    time = f'{filename[0:4]} {filename[4:6]} {filename[6:8]}'
+    return time
 
 def list_posts(Rfile):
     
@@ -37,33 +44,37 @@ def sample_posts(Rfile, Wfile, num, date):
             output_str = json.dumps(output_dict)
             Wfile.write(f"{output_str}\n")
 
+path = osp.dirname(__file__)
 def main():
     
     parser = agp.ArgumentParser()
-    parser.add_argument("rfile1", help="1st json file to be read (day 1)")
-    parser.add_argument("rfile2", help="2nd json file to be read (day 2)")
-    parser.add_argument("rfile3", help="3rd json file to be read (day 3)")
-    parser.add_argument("day1", help="the date when the data in the rfile1 was collected (yyyy/mm/dd)")
-    parser.add_argument("ofile", help="output file (.json)")
-
+    parser.add_argument("rfile1", help="1st json file to be read (day 1). Only the file name (not relative path)")
+    parser.add_argument("rfile2", help="2nd json file to be read (day 2). Only the file name (not relative path)")
+    parser.add_argument("rfile3", help="3rd json file to be read (day 3). Only the file name (not relative path)")
+    parser.add_argument("ofile", help="output file (.json). Relative path is needed")
+    
     args = parser.parse_args()
-    rfile1 = open(args.rfile1, "r")
-    rfile2 = open(args.rfile2, "r")
-    rfile3 = open(args.rfile3, "r")
+    
+    rfile1 = open(osp.join(path, "..", "data", args.rfile1), "r")
+    rfile2 = open(osp.join(path, "..", "data", args.rfile2), "r")
+    rfile3 = open(osp.join(path, "..", "data", args.rfile3), "r")
     ofile = open(args.ofile, "w+")
+   
     try:
-        day1 = dt.datetime.strptime(args.day1, "%Y/%m/%d")
+        day1 = dt.datetime.strptime(time(args.rfile1), "%Y %m %d")
+        day2 = dt.datetime.strptime(time(args.rfile2), "%Y %m %d")
+        day3 = dt.datetime.strptime(time(args.rfile3), "%Y %m %d")
+        days_dict = {1 : day1, 2 : day2, 3 : day3}
     except:
-        print("Enter day1 in the format of yyyy/mm/dd"
-                
-                )
+        print("datetime object is uncreatable")
+
     # determine where to select 334 posts (rfile1, rfile2 or rfile3)
     select = rd.randint(1, 3)
     file_list = [None, rfile1, rfile2, rfile3]
 
     for num in range(1,4):
 
-        date = day1 + dt.timedelta(days=num-1)
+        date = days_dict[num]
         if num == select: 
             sample_posts(file_list[num], ofile, 334, date)
         else:
