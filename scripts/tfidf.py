@@ -25,22 +25,24 @@ def who(title):
     else:
         return "none"
 
-def add(token, tokenlist):
-    
-    if token in tokenlist: 
-        return tokenlist
+def add(token, tokenset):
+    if tokenset is None:    # weird 
+        return {tokenset}
+    if token in tokenset: 
+        return tokenset
     else: 
-        return tokenlist.append(token)
+        return tokenset.add(token)
 
-def addTB(token, tokenlist):
-    
+def addTB(token, tokenset):
+    if tokenset is None:    # weird 
+        return {token}
     if token == "both":
-        return ["biden", "trump"]
+        return {"biden", "trump"}
     elif token == "none":
-        return tokenlist
-    elif token not in tokenlist:
-        return tokenlist.append(token)
-    return tokenlist
+        return tokenset
+    elif token not in tokenset:
+        return tokenset.add(token)
+    return tokenset
 
 def count(word, token, tokendict):
 
@@ -66,13 +68,15 @@ def get_data(read_in, topic_count, subRD_count, TB_count):
     word_dict = {}
     for i in range(len(read_in)):
         topic = read_in.loc[i, "Coding"]
+        print(f'1. {topic}')
         subreddit = read_in.loc[i, "Subreddit"]
-        title = re.sub("[\(\)\[\],-\.?!~:;#&\'\"", " ", read_in.loc[i, "Title"])
+        title = re.sub("\(\)\[\],-\.?'\"!~:;#&", " ", read_in.loc[i, "Title"])
+        print(title)
         TB = who(title)
 
         words = (title.lower()).split(" ")
         for word in words: 
-            
+            print(f'2. {word}') 
             if not word.isalpha():
                 continue
             
@@ -82,14 +86,15 @@ def get_data(read_in, topic_count, subRD_count, TB_count):
                 word_dict[word]["subreddit"] = add(subreddit, word_dict[word]["subreddit"])
                 word_dict[word]["topic"] = add(topic, word_dict[word]["topic"])
                 word_dict[word]["TB"] = addTB(TB, word_dict[word]["TB"])
+                print(f'3. {word_dict[word]["topic"]}')
             else:
-                word_dict[word] = {"wc" : 1, "subreddit": ["subreddit"], "TB": [], "topic": ["topic"]}
+                word_dict[word] = {"wc" : 1, "subreddit":{subreddit}, "TB":set(), "topic":{topic}}
                 word_dict[word]["TB"] = addTB(TB, word_dict[word]["TB"])
-        
+                print(f'3. {word_dict[word]["topic"]}')        
             count(word, topic, topic_count)
             count(word, subreddit, subRD_count)
             countTB(word, TB, TB_count)
-    
+        print("\n")
     result = {"tt_words": tt_words, "word_dict": word_dict} 
     return result
 
@@ -110,6 +115,8 @@ def tfidf(count_dict, data, method):
             tfidf = 0
             freq = count_dict[token][word]
             if method == 1:     # topic
+                if data["word_dict"][word]["topic"] is None:
+                    continue
                 tfidf = freq*(math.log( len(tokens)/len(data["word_dict"][word]["topic"])   ))
             else:   # subreddit or candidate_mentioning posts 
                 tfidf = freq*(math.log( data["tt_words"]/data["word_dict"][word]["wc"]  ))
@@ -126,7 +133,7 @@ def extract_write(temp_result, ofile):
     for token in tokens:
         result[token] = []
 
-        for i in range(10):     # extract 10 words
+        for i in range(20):     # extract 10 words
             result[token].append(temp_result[token][i][0])
     
     output_str = json.dumps(result, indent=4)
@@ -153,7 +160,7 @@ def main():
     subRD_count = {}
     TB_count = {}
     
-    data = get_data(read_in, topic_count, subRS_count, TB_count)
+    data = get_data(read_in, topic_count, subRD_count, TB_count)
     # data is of the format :
     # {"tt_words": int, "word_dict": {
     #       "word1": { 
