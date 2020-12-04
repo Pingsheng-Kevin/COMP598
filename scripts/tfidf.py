@@ -68,33 +68,29 @@ def get_data(read_in, topic_count, subRD_count, TB_count):
     word_dict = {}
     for i in range(len(read_in)):
         topic = read_in.loc[i, "Coding"]
-        print(f'1. {topic}')
         subreddit = read_in.loc[i, "Subreddit"]
         title = re.sub("\(\)\[\],-\.?'\"!~:;#&", " ", read_in.loc[i, "Title"])
-        print(title)
         TB = who(title)
 
         words = (title.lower()).split(" ")
         for word in words: 
-            print(f'2. {word}') 
             if not word.isalpha():
                 continue
-            
+            print(word)     # testing 
             tt_words += 1
             if word in word_dict:
                 word_dict[word]["wc"] += 1
                 word_dict[word]["subreddit"] = add(subreddit, word_dict[word]["subreddit"])
                 word_dict[word]["topic"] = add(topic, word_dict[word]["topic"])
                 word_dict[word]["TB"] = addTB(TB, word_dict[word]["TB"])
-                print(f'3. {word_dict[word]["topic"]}')
+                print(f'{word_dict[word]["topic"]}')    # testing 
             else:
                 word_dict[word] = {"wc" : 1, "subreddit":{subreddit}, "TB":set(), "topic":{topic}}
                 word_dict[word]["TB"] = addTB(TB, word_dict[word]["TB"])
-                print(f'3. {word_dict[word]["topic"]}')        
+                print(f'{word_dict[word]["topic"]}')    # testing 
             count(word, topic, topic_count)
             count(word, subreddit, subRD_count)
             countTB(word, TB, TB_count)
-        print("\n")
     result = {"tt_words": tt_words, "word_dict": word_dict} 
     return result
 
@@ -133,7 +129,7 @@ def extract_write(temp_result, ofile):
     for token in tokens:
         result[token] = []
 
-        for i in range(20):     # extract 10 words
+        for i in range(20):     # extract 20 words
             result[token].append(temp_result[token][i][0])
     
     output_str = json.dumps(result, indent=4)
@@ -141,7 +137,7 @@ def extract_write(temp_result, ofile):
     ofile.close()
             
 def main():
-    
+    print({"after"})  # testing 
     parser = agp.ArgumentParser()
     parser.add_argument("rfile", help="tsv file that has been annotated")
     parser.add_argument("ofile1", help="result on the topic level")
@@ -165,9 +161,9 @@ def main():
     # {"tt_words": int, "word_dict": {
     #       "word1": { 
     #               "wc" : int, 
-    #               "subreddit": [...], 
-    #               "TB": [...], 
-    #               "topic: [...]
+    #               "subreddit": {...}, 
+    #               "TB": {...}, 
+    #               "topic: {...}
     #               }, 
     #       "word2": {
     #                   ...
