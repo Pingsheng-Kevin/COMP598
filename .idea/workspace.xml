@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc77f576-54b1-485d-94e4-9812d2291a39" name="Default Changelist" comment="data updated">
-      <change afterPath="$PROJECT_DIR$/scripts/check_duplicates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/check_duplicates.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/evaluate_data_quality.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/test_mention_frequency.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cmp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/subRD.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/topic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/interpretation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/keyword_interpretation.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/tfidf.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/tfidf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +19,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/collect_hottest.py">
+        <entry file="file://$PROJECT_DIR$/data/stopwords.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/annotation.tsv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="27765">
+              <caret line="1851" column="101" selection-start-line="1851" selection-start-column="101" selection-end-line="1851" selection-end-column="101" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/interpretation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-122">
-              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+            <state relative-caret-position="-578">
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -29,76 +48,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/sample_200posts.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/data/topic_level_keyword_context.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-817" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/sample_1000posts.py">
+        <entry file="file://$PROJECT_DIR$/scripts/keyword_interpretation.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#322#344#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201117_conservative_new.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="930" column="66" lean-forward="true" selection-start-line="930" selection-start-column="66" selection-end-line="930" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201121_conservative_new.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14016" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201121_politics_new.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11796" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/analysis_result.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201117_politics_hot.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-251">
-              <caret line="93" column="293" selection-start-line="93" selection-start-column="293" selection-end-line="93" selection-end-column="293" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/20201117_politics_new.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-777" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/check_duplicates.sh">
+        <entry file="file://$PROJECT_DIR$/data/subreddit_level_keyword_context.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
+            <state relative-caret-position="38340">
+              <caret line="2556" lean-forward="true" selection-start-line="2556" selection-end-line="2556" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/cmp.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/subRD.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-428" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/topic.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2408" />
           </provider>
         </entry>
       </file>
@@ -127,14 +116,18 @@
         <option value="$PROJECT_DIR$/scripts/check_duplicates.py" />
         <option value="$PROJECT_DIR$/scripts/check_duplicates.sh" />
         <option value="$PROJECT_DIR$/scripts/test_mention_frequency.py" />
+        <option value="$PROJECT_DIR$/scripts/tfidf.py" />
+        <option value="$PROJECT_DIR$/scripts/compute_tfidf_test.py" />
+        <option value="$PROJECT_DIR$/scripts/interpretation.py" />
+        <option value="$PROJECT_DIR$/scripts/keyword_interpretation.sh" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="42" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="83" />
     <option name="y" value="23" />
-    <option name="width" value="1326" />
-    <option name="height" value="731" />
+    <option name="width" value="1217" />
+    <option name="height" value="703" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -142,6 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,7 +157,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,6 +165,9 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$USER_HOME$/Desktop" />
       <recent name="$PROJECT_DIR$/scripts" />
@@ -189,7 +185,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Bash.check_duplicates.sh">
+  <component name="RunManager" selected="Bash.keyword_interpretation.sh">
     <configuration name="check_duplicates.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <module name="HW6_260906286" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -201,14 +197,14 @@
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="evaluate_data_quality.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+    <configuration name="keyword_interpretation.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <module name="HW6_260906286" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
       <option name="PROJECT_INTERPRETER" value="false" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/evaluate_data_quality.sh" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/keyword_interpretation.sh" />
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
@@ -233,7 +229,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="compute_tfidf_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HW6_260906286" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,8 +241,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/test.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/compute_tfidf_test.py" />
+      <option name="PARAMETERS" value="../data/annotation.tsv" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -254,7 +250,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_mention_frequency" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="interpretation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HW6_260906286" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,8 +262,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/test_mention_frequency.py" />
-      <option name="PARAMETERS" value="../data/20201130_conservatives_controversial.json" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/interpretation.py" />
+      <option name="PARAMETERS" value="../data/annotation.tsv" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -276,19 +272,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Bash.evaluate_data_quality.sh" />
-      <item itemvalue="Python.test_mention_frequency" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.check_duplicates" />
       <item itemvalue="Bash.check_duplicates.sh" />
+      <item itemvalue="Python.check_duplicates" />
+      <item itemvalue="Python.compute_tfidf_test" />
+      <item itemvalue="Python.interpretation" />
+      <item itemvalue="Bash.keyword_interpretation.sh" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Bash.keyword_interpretation.sh" />
+        <item itemvalue="Python.interpretation" />
+        <item itemvalue="Python.compute_tfidf_test" />
         <item itemvalue="Bash.check_duplicates.sh" />
         <item itemvalue="Python.check_duplicates" />
-        <item itemvalue="Bash.evaluate_data_quality.sh" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test_mention_frequency" />
       </list>
     </recent_temporary>
   </component>
@@ -314,11 +310,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="23" width="1326" height="731" extended-state="1" />
+    <frame x="83" y="23" width="1217" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.27300152" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21939194" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.7820823" weight="0.35454544" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5004035" side_tool="true" weight="0.32776934" />
@@ -326,7 +322,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49959645" weight="0.32928678" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.6319613" visible="true" weight="0.3060606" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.6319613" visible="true" weight="0.39240506" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -339,7 +335,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.27300152" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15039578" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.7820823" weight="0.35454544" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5004035" side_tool="true" weight="0.32776934" />
@@ -347,7 +343,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49959645" weight="0.32928678" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.6319613" visible="true" weight="0.3060606" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.6319613" visible="true" weight="0.39240506" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -364,55 +360,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="data updated" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../HW8_260906286/scripts/20201106_politics.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201122_conservative_new.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201122_politics_hot.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201122_politics_new.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201123_politics_hot.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12599" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201123_politics_new.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13109" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201126_politics_controversial.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4028" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201124_politics_hot.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201124_conservatives_new.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201127_conservatives_top.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-355" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201127_conservatives_rising.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201127_conservatives_new.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14685" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201127_conservatives_hot.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/20201127_conservatives_controversial.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -459,9 +406,7 @@
     <entry file="file://$PROJECT_DIR$/data/20201130_politics_controversial.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt" />
     <entry file="file://$PROJECT_DIR$/data/20201130_politics_new.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -473,13 +418,7 @@
         <state relative-caret-position="-458" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/test.py" />
     <entry file="file://$PROJECT_DIR$/data/20201124_conservatives_hot.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-404" />
@@ -494,26 +433,6 @@
           <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201117_conservative_hot.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="643" column="98" selection-start-line="643" selection-start-column="98" selection-end-line="643" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201121_conservative_hot.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9478" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201121_politics_hot.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12763" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201122_conservative_hot.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/20201130_conservatives_top.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -592,16 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201121_conservative_new.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14016" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201121_politics_new.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11796" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/analysis_result.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
@@ -609,22 +518,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/20201117_politics_hot.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="93" column="293" selection-start-line="93" selection-start-column="293" selection-end-line="93" selection-end-column="293" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/20201121_conservative_new.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201121_politics_new.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201121_conservative_hot.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201121_politics_hot.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201122_politics_hot.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/20201117_politics_new.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-777" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/check_duplicates.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/open_coding.tsv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-378">
+          <caret line="316" column="88" lean-forward="true" selection-start-line="316" selection-start-column="88" selection-end-line="316" selection-end-column="88" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201117_politics_hot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5909">
+          <caret line="93" column="293" selection-start-line="93" selection-start-column="293" selection-end-line="93" selection-end-column="293" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/stopwords.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201122_conservative_hot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10635">
+          <caret line="709" column="23" selection-start-line="709" selection-start-column="23" selection-end-line="709" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1831">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/20201117_conservative_hot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="643" column="98" selection-start-line="643" selection-start-column="98" selection-end-line="643" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/compute_tfidf_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/annotation.tsv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="27765">
+          <caret line="1851" column="101" selection-start-line="1851" selection-start-column="101" selection-end-line="1851" selection-end-column="101" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/subRD.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-428" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/topic.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/cmp.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/topic_level_keyword_context.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-817" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/interpretation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/keyword_interpretation.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/subreddit_level_keyword_context.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38340">
+          <caret line="2556" lean-forward="true" selection-start-line="2556" selection-end-line="2556" />
         </state>
       </provider>
     </entry>
