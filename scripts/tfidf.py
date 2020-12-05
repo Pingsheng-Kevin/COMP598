@@ -92,6 +92,7 @@ def get_data(read_in, topic_count, subRD_count, TB_count):
             count(word, subreddit, subRD_count)
             countTB(word, TB, TB_count)
     result = {"tt_words": tt_words, "word_dict": word_dict} 
+    print(topic_count.keys())
     return result
 
 def sort_by_value(tokendict):
@@ -122,15 +123,21 @@ def tfidf(count_dict, data, method):
     result = sort_by_value(result)
     return result 
 
-def extract_write(temp_result, ofile):
+def extract_write(temp_result, ofile, stopwords):
     tokens = temp_result.keys()
     
     result ={}
     for token in tokens:
         result[token] = []
-
-        for i in range(20):     # extract 20 words
-            result[token].append(temp_result[token][i][0])
+        
+        num = 0
+        i = 0
+        while num < 20:         # extract 20 words 
+            word = temp_result[token][i][0]
+            if word not in stopwords:
+                result[token].append(word)
+                num += 1
+            i += 1
     
     output_str = json.dumps(result, indent=4)
     ofile.write(output_str)
@@ -143,6 +150,7 @@ def main():
     parser.add_argument("ofile1", help="result on the topic level")
     parser.add_argument("ofile2", help="result on the subreddit level")
     parser.add_argument("ofile3", help="result on the candidate-mentioning posts level")
+    parser.add_argument("stopwords",help="a document listing all the stop words")
 
     args = parser.parse_args()
     rfile = open(args.rfile, "r")
@@ -151,7 +159,9 @@ def main():
     ofile_topic = open(args.ofile1, "w+")
     ofile_subRD = open(args.ofile2, "w+")
     ofile_TB = open(args.ofile3, "w+")
-
+    
+    stopwords = set(open(args.stopwords).read().split())
+    
     topic_count = {}
     subRD_count = {}
     TB_count = {}
@@ -173,13 +183,13 @@ def main():
     # }
     
     temp_result = tfidf(topic_count, data, 1)
-    extract_write(temp_result, ofile_topic)     # ofiles are closed in the method "extract_write"
+    extract_write(temp_result, ofile_topic, stopwords)     # ofiles are closed in the method "extract_write"
 
     temp_result = tfidf(subRD_count, data, 2)
-    extract_write(temp_result, ofile_subRD)
+    extract_write(temp_result, ofile_subRD, stopwords)
 
     temp_result = tfidf(TB_count, data, 3)
-    extract_write(temp_result, ofile_TB)
+    extract_write(temp_result, ofile_TB, stopwords)
     
     rfile.close()
 
