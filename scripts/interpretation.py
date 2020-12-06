@@ -9,7 +9,7 @@ def topic_level_analysis(dfg_category, topic_json):
     print()
     for category, posts in dfg_category:
         posts['Title'] = posts['Title'].str.lower()
-        print(category)
+        # print(category)
         print(f'For: {category}')
         for word in topic_json.get(category):
             print()
@@ -17,9 +17,11 @@ def topic_level_analysis(dfg_category, topic_json):
             print(f'For the word: \'{word}\' in topic: {category}')
             print()
             print('--------')
-            for title in posts['Title']:
-                if word in title:
-                    print(title)
+            for index, post in posts.iterrows():
+                # print(post)
+                if word in post['Title']:
+                    print(post['Title'])
+                    print(f'The post above is posted in {post.Subreddit}')
         print('-----------------------------------------------------------')
 
 
@@ -60,11 +62,11 @@ def main():
         subreddit_json = json.load(subreddit_json)
 
         # print(subreddit_json)
-        # subreddit_level_analysis(dfg_sub, subreddit_json)
+        subreddit_level_analysis(dfg_sub, subreddit_json)
 
         topic_json = open('../data/topic.json', 'r')
         topic_json = json.load(topic_json)
-        topic_level_analysis(dfg_category, topic_json)
+        # topic_level_analysis(dfg_category, topic_json)
 
 
 if __name__ == '__main__':

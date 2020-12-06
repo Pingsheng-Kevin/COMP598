@@ -1,7 +1,5 @@
 {
     "politics": [
-        "trump",
-        "biden",
         "election",
         "gop",
         "georgia",
@@ -9,7 +7,6 @@
         "house",
         "white",
         "legal",
-        "joe",
         "results",
         "claims",
         "transition",
@@ -17,14 +14,15 @@
         "fraud",
         "senate",
         "campaign",
-        "donald",
         "covid",
-        "president"
+        "president",
+        "coronavirus",
+        "voters",
+        "team",
+        "win"
     ],
     "conservative": [
-        "trump",
         "election",
-        "biden",
         "georgia",
         "covid",
         "media",
@@ -32,7 +30,6 @@
         "sidney",
         "democrats",
         "governor",
-        "joe",
         "county",
         "votes",
         "people",
@@ -41,6 +38,9 @@
         "news",
         "president",
         "million",
-        "court"
+        "court",
+        "results",
+        "california",
+        "coronavirus"
     ]
 }

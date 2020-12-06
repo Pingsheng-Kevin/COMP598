@@ -22,11 +22,8 @@
         "media"
     ],
     "trump": [
-        "trump",
         "election",
-        "biden",
         "gop",
-        "donald",
         "michigan",
         "president",
         "legal",
@@ -41,12 +38,12 @@
         "transition",
         "recount",
         "meeting",
-        "obama"
+        "obama",
+        "pennsylvania",
+        "concede",
+        "vote"
     ],
     "biden": [
-        "biden",
-        "joe",
-        "trump",
         "transition",
         "georgia",
         "win",
@@ -63,6 +60,9 @@
         "official",
         "president",
         "inauguration",
-        "presidential"
+        "presidential",
+        "attorney",
+        "certify",
+        "picks"
     ]
 }
