@@ -28,23 +28,14 @@ def who(title):
         return "none"
 
 def add(token, tokenset):
-    if tokenset is None:    # weird 
-        return {tokenset}
-    if token in tokenset: 
-        return tokenset
-    else: 
-        return tokenset.add(token)
+    if token not in tokenset:
+        tokenset.add(token)
 
 def addTB(token, tokenset):
-    if tokenset is None:    # weird 
-        return {token}
     if token == "both":
-        return {"biden", "trump"}
-    elif token == "none":
-        return tokenset
+        tokenset = {"biden", "trump"}
     elif token not in tokenset:
-        return tokenset.add(token)
-    return tokenset
+        tokenset.add(token)
 
 def count(word, token, tokendict):
 
@@ -78,16 +69,17 @@ def get_data(read_in, topic_count, subRD_count, TB_count):
         for word in words: 
             if not word.isalpha():
                 continue
-            print(word)     # testing 
             tt_words += 1
             if word in word_dict:
+                print(f'Already Exist: {word} {word_dict[word]}')
                 word_dict[word]["wc"] += 1
-                word_dict[word]["subreddit"] = add(subreddit, word_dict[word]["subreddit"])
-                word_dict[word]["topic"] = add(topic, word_dict[word]["topic"])
-                word_dict[word]["TB"] = addTB(TB, word_dict[word]["TB"])
+                add(subreddit, word_dict[word]["subreddit"])
+                add(topic, word_dict[word]["topic"])
+                addTB(TB, word_dict[word]["TB"])
+                print(f'Modified: {word} {word_dict[word]}')
             else:
-                word_dict[word] = {"wc" : 1, "subreddit":{subreddit}, "TB":set(), "topic":{topic}}
-                word_dict[word]["TB"] = addTB(TB, word_dict[word]["TB"])
+                word_dict[word] = {"wc":1, "subreddit":{subreddit}, "TB":set(), "topic":{topic}}
+                addTB(TB, word_dict[word]["TB"])
             count(word, topic, topic_count)
             count(word, subreddit, subRD_count)
             countTB(word, TB, TB_count)
@@ -133,7 +125,7 @@ def plotsGenerator(x_result, y_result):
             x = x_result[token]
             y = y_result[token]
             p = plt.bar(x[:10], y[:10])
-            plt.xticks(rotation = 30, horizontalalignment='right')
+            plt.xticks(rotation = 20, horizontalalignment='right')
             plt.title(f'{plotTitles[token]}')
             for i in range(len(y)):
                 plt.annotate(str(y[i]), xy=(x[i], y[i]), ha="center", va="bottom", fontsize=8)
@@ -148,13 +140,13 @@ def extract_write(temp_result, ofile, stopwords):
     for token in tokens:
         result[token] = []
         scores_result[token] = []
-
+        names = ["trump", "biden", "joe", "donald"]
         num = 0
         i = 0
         while num < 20:         # extract 20 words 
             word = temp_result[token][i][0]
             score = temp_result[token][i][1]
-            if word not in stopwords:
+            if word not in stopwords and word not in names:
                 result[token].append(word)
                 scores_result[token].append(round(score, 3))
                 num += 1
@@ -166,7 +158,6 @@ def extract_write(temp_result, ofile, stopwords):
     ofile.close()
             
 def main():
-    print({"after"})  # testing 
     parser = agp.ArgumentParser()
     parser.add_argument("rfile", help="tsv file that has been annotated")
     parser.add_argument("ofile1", help="result on the topic level")
