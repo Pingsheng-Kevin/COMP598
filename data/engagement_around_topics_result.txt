@@ -1,0 +1,24 @@
+The topic is: C
+58.333% of posts in the topic C is from r/politics
+41.667% of posts in the topic C is from r/Conservative
+The topic is: E
+71.975% of posts in the topic E is from r/politics
+28.025% of posts in the topic E is from r/Conservative
+The topic is: H
+55.738% of posts in the topic H is from r/politics
+44.262% of posts in the topic H is from r/Conservative
+The topic is: I
+61.842% of posts in the topic I is from r/politics
+38.158% of posts in the topic I is from r/Conservative
+The topic is: N
+33.208% of posts in the topic N is from r/politics
+66.792% of posts in the topic N is from r/Conservative
+The topic is: O
+67.816% of posts in the topic O is from r/politics
+32.184% of posts in the topic O is from r/Conservative
+The topic is: T
+88.119% of posts in the topic T is from r/politics
+11.881% of posts in the topic T is from r/Conservative
+The topic is: V
+61.644% of posts in the topic V is from r/politics
+38.356% of posts in the topic V is from r/Conservative
