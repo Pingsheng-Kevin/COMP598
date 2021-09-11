@@ -1,2 +1,1 @@
-"This is a test readme file."
-"This is a update."
+COMP 598 Topics in Computer Science. ---- Intro. to Data Science Prof. Derek Ruths
